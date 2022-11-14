@@ -10,12 +10,14 @@ namespace double_linked_list
     {
         /* Node class represents the node of doubly linkedm list.
          * it consists of the information part and links to
-         * its succeding and preceding
+         * its succeding and precceding
          * in terms  of next and previous */
         public int noMhs;
         public string name;
         //point to the succeding node
         public Node next;
+        //point to precceding node
+        public Node prev;
 
     }
     internal class Program
