@@ -57,6 +57,18 @@ namespace double_linked_list
                 START = newNode;
                 return;
             }
+            /*if the node is to be inserted at between two node*/
+            Node prevoius, current;
+            for (current = prevoius = START;
+                current != null && nim <= current.noMhs;
+                prevoius = current, current = current.next)
+            {
+                if ( nim == current.noMhs)
+                {
+                    Console.WriteLine("\nDuplicate roll numbers not allowed");
+                    return;
+                }
+            }
         }
     }
     internal class Program
