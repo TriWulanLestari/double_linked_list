@@ -104,6 +104,14 @@ namespace double_linked_list
                 previous.next = null;
                 return true;
             }
+            //node between two nodes in the list
+            if (current == START)
+            {
+                START = START.next;
+                if (START != null)
+                    START.prev = null;
+                return true;
+            }
         }
     }
     internal class Program
